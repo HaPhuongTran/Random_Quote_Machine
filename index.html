@@ -3,37 +3,30 @@
 		<title>Random Quote Machine</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body >
 		<div id="banner">
 			<img src="image/background.jpeg">
 		</div>
-
+			<h2><b>Random Quote Machine</b></h2>
 		<div id="contain">
-			<h2>Random Quote Machine</h2>
-			<div id="Quote" style="border: 1px solid white;">
-				<p id="quote-text"></p>
-				<div id="author-quote">
-				<p></p>
+			<div id="Quote">
+				<p id="quote-text" ></p>
+				<p id="author-quote"></p>
+			</div>
+		</div>
+		<div id="sub_contain">
+				<div class="stweet-change">
+					<a href="#" class="fa fa-twitter" onclick="tweetQuote()"></a>
 				</div>
-			</div>
+				<div class="stweet-change" style="padding-top: 50px;">
+					<button id="newQuote" onclick="getQuote()"> New Quote</button>
+					
+				</div>	
 		</div>
-		<div id="button-stweet">
-			<div class="sub-button-stweet">
-				<a href="#" class="fa fa-twitter"></a>
-			</div>
-			<div class="sub-button-stweet">
-				fsdfsfdsf
-			</div>
-		</div>
-		
+		<script src="js/tweet.js"></script>
 	</body>
 </html>
 
-
-<!-- <div id="contain">
-			
-			
-			
-</div> -->
