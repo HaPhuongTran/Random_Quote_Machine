@@ -3,7 +3,7 @@
 		<title>Random Quote Machine</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 	<body >
@@ -22,8 +22,11 @@
 					<a href="#" class="fa fa-twitter" onclick="tweetQuote()"></a>
 				</div>
 				<div class="stweet-change" style="padding-top: 50px;">
-					<button id="newQuote" onclick="getQuote()"> New Quote</button>
+					<button id="newQuote" onclick="setInterval(getOrderQuote, 2000)"> Auto Random</button>
 					
+				</div>
+				<div class="stweet-change" style="padding-top: 50px;">
+					<button id="newQuote" onclick="getQuote()"> New Quote</button>
 				</div>	
 		</div>
 		<script src="js/tweet.js"></script>
